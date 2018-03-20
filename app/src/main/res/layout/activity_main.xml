@@ -1,18 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.aula7.parcialyojansanchezi056114.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:elevation="5dp">
 
-</android.support.constraint.ConstraintLayout>
+                <include layout="@layout/cardview1"></include>
+                <include layout="@layout/cardview2"></include>
+                <include layout="@layout/cardview3"></include>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/cardview4"></include>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <include layout="@layout/cardview5"></include>
+            <include layout="@layout/cardview5"></include>
+            <include layout="@layout/cardview5"></include>
+            <include layout="@layout/cardview5"></include>
+            <include layout="@layout/cardview5"></include>
+            <include layout="@layout/cardview5"></include>
+            <include layout="@layout/cardview5"></include>
+            <include layout="@layout/cardview5"></include>
+            <include layout="@layout/cardview5"></include>
+            <include layout="@layout/cardview5"></include>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
